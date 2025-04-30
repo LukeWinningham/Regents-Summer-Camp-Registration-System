@@ -137,7 +137,6 @@ const Dashboard = () => {
                     <TableCell>Grade</TableCell>
                     <TableCell>Program</TableCell>
                     <TableCell>Status</TableCell>
-                    <TableCell>Date</TableCell>
                     <TableCell>Parent Name</TableCell>
                     <TableCell>Contact</TableCell>
                     <TableCell>Actions</TableCell>
@@ -156,7 +155,6 @@ const Dashboard = () => {
                           size="small"
                         />
                       </TableCell>
-                      <TableCell>{registration.date}</TableCell>
                       <TableCell>{registration.parentName}</TableCell>
                       <TableCell>{registration.email}</TableCell>
                       <TableCell>
@@ -263,9 +261,7 @@ const Dashboard = () => {
                     <Typography variant="body2">
                       Status: {selectedRegistration?.status}
                     </Typography>
-                    <Typography variant="body2">
-                      Registration Date: {selectedRegistration?.date}
-                    </Typography>
+
                   </>
                 }
               />
