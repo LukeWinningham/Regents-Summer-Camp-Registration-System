@@ -29,3 +29,6 @@ To get started with the project, clone the repository and run the following comm
 npm install
 npm run dev
 ```
+### Admin Login
+- Username: admin@example.com
+- Password: password123
