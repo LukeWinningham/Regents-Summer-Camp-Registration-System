@@ -1,0 +1,31 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  id         Int    @id @default(autoincrement())
+  name       String
+  age        Int
+  email      String
+  status     String
+  guardianId Int
+}
+
+model Registration {
+  id             Int      @id @default(autoincrement())
+  studentId      Int
+  status         String
+  dateRegistered DateTime @default(now())
+}
+
+model Waitlist {
+  id        Int     @id @default(autoincrement())
+  studentId Int
+  dateAdded DateTime @default(now())
+}
